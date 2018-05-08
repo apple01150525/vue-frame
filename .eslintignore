@@ -1,0 +1,5 @@
+build/*.js
+config/*.js
+src/pages/sql-editor/*
+src/pages/sql-tasks/*
+src/vuex/*

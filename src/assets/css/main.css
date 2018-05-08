@@ -1,0 +1,32 @@
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgba(133, 144, 166, .6);
+    /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
+}
+
+/*reset*/
+html,body,address,blockquote,div,dl,form,h1,h2,h3,h4,h5,h6,ol,p,ul,dd,dt,li,object,a,b,em,i,img,samp,span,strong,sub,sup,tt,var,input,select{margin:0;padding:0}
+body{font:16px/1.5 'Helvetica Neue', 'Microsoft YaHei','Heiti SC',simhei,'Lucida Sans Unicode','Myriad Pro','Hiragino Sans GB',Verdana;color:#666;word-wrap:break-word;word-break:break-all;
+    -webkit-text-size-adjust: none;}
+input,button,img,fieldset{outline:none}
+input,select{outline:none}
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner{
+border:none;padding:0;
+}
+/* a */
+a{display:inline-block;text-decoration:none;outline:none}
+a:hover{text-decoration:none}
+/* list */
+ul,ol{list-style:none;}
+/*float*/
+.clear{zoom:1;}
+.clear:after{display:block; content:""; height:0; clear:both;visibility:hidden;}
+/*reset--end*/
+html,body{width: 100%; height: 100%;}
