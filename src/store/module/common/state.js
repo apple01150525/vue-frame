@@ -1,5 +1,7 @@
 const state = {
-    fold: false  // 是否折叠侧边栏
-};
+  fold: false,
+  navHidden: false,
+  sideHidden: false
+}
 
-export default state;
+export default state

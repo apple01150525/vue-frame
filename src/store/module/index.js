@@ -1,7 +1,5 @@
-// import index from "./index";
-import common from "./common";
+import common from './common'
 
 export default {
-    // index,
-    common
-};
+  common
+}

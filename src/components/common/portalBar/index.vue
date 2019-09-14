@@ -1,26 +1,27 @@
-<style lang= "scss" scoped>
+<style lang='scss' scoped>
     .mg-header{
         width: 100%;
         height: 60px;
         background: #fff;
-        .mg-logo{
-            width: 220px;
-            height: 100%;
-            background: #283744;
-            color: #fff;
-            text-align: center;
+
+    }
+    .mg-logo{
+        width: 220px;
+        height: 100%;
+        background: #283744;
+        color: #fff;
+        text-align: center;
+        line-height: 60px;
+        font-size: 18px;
+        float: left;
+    }
+    .mg-info{
+        text-align: right;
+        ul>li{
+            display: inline-block;
             line-height: 60px;
-            font-size: 18px;
-            float: left;
-        }
-        .mg-info{
-            text-align: right;
-            ul>li{
-                display: inline-block;
-                line-height: 60px;
-                i{
-                    font-size: 20px;
-                }
+            i{
+                font-size: 20px;
             }
         }
     }
@@ -31,8 +32,8 @@
     }
 </style>
 <template>
-    <div class = "mg-header">
-        <div class="mg-logo">mongoose</div>
+    <div class = "mg-header" v-if = "!navHidden">
+        <div class="mg-logo">lalalal</div>
         <div class="mg-info">
             <ul>
                 <li>
@@ -49,14 +50,19 @@
     </div>
 </template>
 <script>
-    import dropDown from "@sub/drop-down";
-    export default {
-        data () {
-            return {
-                msg: "hello world"
-            };
-        },
-        components: {dropDown},
-        methods: {}
-    };
+import { mapGetters } from 'vuex'
+
+export default {
+  data () {
+    return {
+      msg: 'hello world'
+    }
+  },
+  computed: {
+    ...mapGetters({
+      navHidden: 'common/navHidden'
+    })
+  },
+  methods: {}
+}
 </script>
